@@ -1,0 +1,35 @@
+@baseUrl = http://localhost:3000/api
+
+# @name get-All-categories
+GET {{baseUrl}}/categories
+
+###
+
+# @name add-New-Category
+POST {{baseUrl}}/categories
+Content-Type:  application/json
+
+{
+    "name":"Máy tính 2 "
+}
+
+###
+
+# @name change-Category-Name
+PATCH  {{baseUrl}}/categories/3
+Content-Type:  application/json
+
+{
+    "name":"Máy tính bảng"
+}
+
+###
+
+# @name remove-Category 
+DELETE   {{baseUrl}}/categories/3
+Content-Type:  application/json
+
+###
+
+# @name get-All-categories
+GET {{baseUrl}}/products
