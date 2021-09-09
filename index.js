@@ -29,7 +29,8 @@ server.use((req, res, next) => {
 router.render = (req, res) => {
     const headers = res.getHeaders();
     const totalCountHeader = headers["x-total-count"];
-    
+    console.log("totalCountHeader")
+    console.log(totalCountHeader)
     if (req.method === "GET" && totalCountHeader) {
         const queryParams = queryString.parse(req._parsedUrl.query);
         const result = {

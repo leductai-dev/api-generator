@@ -1,12 +1,11 @@
 @baseUrl = http://localhost:3000/api
 
 # @name get-All-categories
-GET {{baseUrl}}/categories
-
+GET {{baseUrl}}/products?_page=4&_limit=20
 ###
 
 # @name add-New-Category
-POST {{baseUrl}}/categories
+POST {{baseUrl}}/products?_page=4&_limit=20
 Content-Type:  application/json
 
 {
