@@ -4,6 +4,10 @@
 GET {{baseUrl}}/products?_page=4&_limit=20
 ###
 
+# @name get-All-categories
+GET {{baseUrl}}/products
+###
+
 # @name add-New-Category
 POST {{baseUrl}}/products?_page=4&_limit=20
 Content-Type:  application/json
